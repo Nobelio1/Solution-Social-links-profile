@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 20%);
+  --grey-ligth: hsl(0, 0%, 33%);
+  --dark-grey: hsl(0, 0%, 12%);
+  --off-black: hsl(0, 0%, 8%);
+
+  --size: 14px;
+  --inter: "Inter", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--inter);
+}
+
+body {
+  background-color: var(--off-black);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: var(--dark-grey);
+  padding: 1rem;
+  border-radius: 10px;
+  width: 330px;
+  height: 550px;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card__user {
+  border-radius: 50%;
+  width: 90px;
+  margin-bottom: 1.5rem;
+}
+
+.card__name {
+  color: var(--white);
+  font-weight: 500;
+  font-size: 25px;
+  margin-bottom: 0.3rem;
+}
+
+.card__resident {
+  color: var(--green);
+  font-weight: 500;
+  font-size: var(--size);
+  margin-bottom: 2rem;
+}
+
+.card__description {
+  color: var(--white);
+  font-size: var(--size);
+  font-weight: 200;
+  margin-bottom: 0.5rem;
+}
+
+.card__social {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+  gap: 1rem;
+  width: 100%;
+}
+
+.social__cta {
+  color: var(--white);
+  font-weight: 500;
+  font-size: 14px;
+  background-color: var(--grey);
+  border-style: none;
+  padding: 0.8rem;
+  border-radius: 5px;
+}
+
+.social__cta:hover {
+  background-color: var(--green);
+  color: var(--off-black);
+}
+
+@media (min-width: 375px) {
+  .card {
+    width: 380px;
+    height: 580px;
+    padding: 2rem;
+  }
+}
